@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>payment</title>
+    <link rel="stylesheet" href="Payment.css" >
+  </head>
+  <body id="payment">
+  <section class="div1">
+  <h1 class="name" align="right" style="font-weight: bold; font-size: 70px; color: white; top: 10px;">Playo</h1>
+  <a href="About.html#about"><input type="button" value="About" onclick="#" class="non1"></a>
+  <a href="Help.html#help"><input type="button" value="Help" onclick="#" class="non2"></a>
+  <a href="login.php#login"><input type="button" value="Logout" onclick="#" class="non3"></a>
+  </section>
+    <form class="py_form" action="alertt.php">
+    <div class="py_title">
+      <div class="title">
+        <div class="title_name"><h3 align="left">payment&nbsp;
+          <img src="visa.png"/>
+          <img src="master.png"/>
+          <img src="paypal.png"/></h3>
+        </div>
+          <table border="3"cellspacing="0" summary="BILL" width="500">
+    <thead><!--thead tbody and tfoot should be given accordingly to ur table--->
+    <tr align="center">
+      <th>Sl.No</th>
+      <th>Clubs</th>
+      <th>Average price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr align="center">
+      <td>1</td>
+      <td>BigBox</td>
+      <td>Rs 168</td>
+    </tr>
+    <tr align="center">
+      <td>2</td>
+      <td>KickShack</td>
+      <td>Rs 1516</td>
+    </tr>
+    <tr align="center">
+      <td>3</td>
+      <td>Racketlon Sports</td>
+      <td>Rs 275</td>
+    </tr>
+    <tr align="center">
+      <td>4</td>
+      <td>Skyfinch Sports</td>
+      <td>Rs 200</td>
+    </tr>
+    <tr align="center">
+      <td>5</td>
+      <td>Sportingo</td>
+      <td>Rs 967</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    <tr align="center">
+      <td colspan="2">TOTAL</td><!--USED ON TD OR TH-->
+      <td>Rs 3126</td>
+    </tr>
+    </tfoot>
+  </table>
+        <div class="dropdown">
+          <label for=""></label>
+        </div>
+        <div class="fm_input">
+          <label for="name" >Name <br>
+            <input type="text" placeholder=" Name" class="nm" required autofocus></label>
+        </div>
+        <div class="fm_input">
+          <label for="c-card">card number <br>
+            <input type="text" placeholder=" - - - -  - - - -  - - - -  - - - -" class="card" required pattern="[0-9]{16}"></label>
+        </div>
+        <div class="fm_input">
+          <label for="">Expiry date <br><input type="text" placeholder="  MM / YYYY" class="ex" required pattern="[0-9]{2}/[0-9]{4}" title="Keep the format in mind"></label>
+        </div>
+        <div class="fm_input">
+          <label for="">CVV &nbsp;&nbsp;<input type="" placeholder="  - - - " class="cvv" required pattern="[0-9]{3}" title="Triple digit only"></label>
+        </div>
+        <div class="sbmt">
+           <button type="submit" id="clickk" class="final">Make Payment</button>
+        </div>
+    <div>
+</form>
+  </body>
+</html>
